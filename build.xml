@@ -15,7 +15,7 @@
 
     <target name="jar" depends="compile" description="generate the distribution jar">
         <mkdir dir="${jar.dir}"/>
-        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+        <jar destfile="${jar.dir}/${ant.project.name}.war" basedir="${classes.dir}">
             <manifest>
                 <attribute name="Main-Class" value="piona.Main"/>
             </manifest>
